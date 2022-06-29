@@ -9,7 +9,7 @@
 
 # User-specific files
 *git-remote.txt
-*igitignore
+*.igitignore
 
 # User-specific folders
 bin/

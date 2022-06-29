@@ -19,22 +19,172 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>Ini landing page</h1>
-          <a class="btn btn-primary" href="/Verry/index.html">Sumatra</a>
-          <a class="btn btn-secondary" href="/Bagja/index.html">Jawa</a>
-          <a class="btn btn-secondary" href="#">Kalimantan</a>
-          <a class="btn btn-secondary" href="#">Sulawesi</a>
-          <a class="btn btn-secondary" href="#">Papua</a>
+    <!-- Header -->
+
+    <header>
+      <!-- navbar -->
+      <nav class="navbar fixed-top">
+        <div class="container d-block w-75">
+          <button
+            class="btn-hamburger"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <i class="fa-solid fa-lg fa-bars"></i>
+          </button>
+          <a class="navbar-brand text-white" href="/index.php"
+            >Kuliner.<span class="text-green">id</span></a
+          >
         </div>
-      </div>
-    </div>
+
+        <!-- offcanvas -->
+        <div
+          class="offcanvas offcanvas-start text-black"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <a class="navbar-brand" href="#"
+              >Kuliner.<span class="text-green">id</span></a
+            >
+
+            <ul class="navbar-nav pt-5">
+              <li class="nav-item">
+                <a class="nav-link" href="Sumatra/index.html"
+                  >Kuliner Sumatra</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Jawa/index.html">Kuliner Jawa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Kuliner Kalimantan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Kuliner Sulawesi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Kuliner Papua</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <!-- Section Hero -->
+      <section id="hero" class="text-white">
+        <!-- Hero text -->
+        <div class="text-box text-center">
+          <h1>Kuliner Nusantara</h1>
+          <h3>
+            Temukan kuliner asli Indonesia yang terkenal dari berbagai daerahnya
+            di website ini.
+          </h3>
+          <a class="btn-temukan" href="#daerah">Temukan</a>
+        </div>
+
+        <div class="pengertian-kulinerid">
+          <div class="container w-75">
+            <h2>Apa itu Kuliner.<span class="text-green">id</span></h2>
+            <p>
+              Kuliner.id merupakan salah satu website yang dibuat untuk
+              memberikan sajian informasi tentang makanan asli nusantara. Kami
+              ingin melestarikan makanan budaya asli Indonesia yang beberapa
+              waktu ini mulai tergeserkan oleh makanan modern.
+            </p>
+          </div>
+        </div>
+
+        <!-- Button scroll to top -->
+        <div class="backToTop bg-danger">
+          <i class="fa-solid fa-lg fa-arrow-up"></i>
+        </div>
+      </section>
+
+      <!-- Section Daerah -->
+      <section id="daerah">
+        <div class="bg-light">
+          <div class="container w-75">
+            <div class="text-center">
+              <h2>Pilih daerah kuliner.</h2>
+              <p class="mx-auto mt-0">
+                Temukan kuliner di daerah yang anda inginkan dengan memilih
+                daerah di bawah ini
+              </p>
+            </div>
+            <div class="daerah-container">
+              <a href="Sumatra/index.html">
+                <img
+                  src="img/sumatra.jpeg"
+                  alt="Rendang Sumatra"
+                  class="img-daerah"
+                />
+                <h3 class="daerah">Kuliner Sumatra</h3>
+              </a>
+              <a href="">
+                <img
+                  src="img/jawa.jpg"
+                  alt="Rendang Sumatra"
+                  class="img-daerah"
+                />
+                <h3 class="daerah">Kuliner Jawa</h3>
+              </a>
+              <a href="">
+                <img
+                  src="img/kalimantan.jpg"
+                  alt="Rendang Sumatra"
+                  class="img-daerah"
+                />
+                <h3 class="daerah">Kuliner Kalimantan</h3>
+              </a>
+              <a href="">
+                <img
+                  src="img/sulawesi.jpg"
+                  alt="Rendang Sumatra"
+                  class="img-daerah"
+                />
+                <h3 class="daerah">Kuliner Sulawesi</h3>
+              </a>
+              <a href="">
+                <img
+                  src="img/papua.jpg"
+                  alt="Rendang Sumatra"
+                  class="img-daerah"
+                />
+                <h3 class="daerah">Kuliner Papua</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="bg-black text-white text-center bg-black p-4">
+      &copy; 2022 Kelompok 02. All Rights Reserved
+    </footer>
 
     <!-- javascript -->
     <script
@@ -47,6 +197,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

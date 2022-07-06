@@ -65,7 +65,7 @@ nav span {
 /* offcanvas */
 
 nav .offcanvas ul li a {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   display: block;
   padding: 1rem 5rem;
@@ -83,11 +83,11 @@ nav .offcanvas ul li a.active {
 /* Section Hero */
 
 #hero {
-  background-image: url("img/main-background.png");
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, .64), rgba(0, 0, 0, .64)), url("/img/sulawesi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 18rem 0 22rem 0;
+  padding: 15rem 0 22rem 0;
 }
 
 #hero .text-box {
@@ -118,14 +118,14 @@ nav .offcanvas ul li a.active {
 }
 
 #hero .backToTop {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   position: fixed;
   bottom: -6rem;
   right: 2rem;
   display: flex;
   justify-content: center;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   border-radius: 20%;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, .8);
   transition: .3s ease;
@@ -134,7 +134,7 @@ nav .offcanvas ul li a.active {
 
 #hero .backToTop:hover {
   cursor: pointer;
-  padding-top: 1.9rem;
+  padding-top: 1.5rem;
 }
 
 #hero .backToTop.show {
@@ -145,31 +145,29 @@ nav .offcanvas ul li a.active {
 /* Section Kuliner */
 
 #kuliner div.kuliner-box {
-  padding: 100px 0;
+  padding: 7rem 0;
 }
 
 #kuliner div.kuliner-box h1.kuliner-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
 
 #kuliner div.kuliner-box div.kuliner-desc {
-  margin: 1.5rem 0 0 2.75rem;
+  margin-left: 2rem;
 }
 
 #kuliner div.kuliner-desc p {
-  font-family: "EB Garamond", serif;
-  font-size: 1.75rem;
-  line-height: 1.5;
+  font-size: 1.25rem;
+  line-height: 2;
 }
 
 #kuliner div.kuliner-desc a.btn-selengkapnya {
-  padding: 0.5rem 2.5rem;
-  font-family: "EB Garamond", serif;
-  font-size: 1.25rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin-top: 3rem;
+  margin-top: 1rem;
   border: 2px solid #000;
 }
 
@@ -189,19 +187,6 @@ nav .offcanvas ul li a.active {
   font-size: 1.25rem;
 }
 
-/* Mobile */
-
-@media (max-width: 992px) {
-  #kuliner .kuliner-box {
-    padding: 40px 0px 100px;
-  }
-
-  #hero .text-box {
-    width: 90%;
-  }
-}
-
-/* Tablet */
 
 @media (max-width: 1200px) {
   * {
@@ -214,6 +199,14 @@ nav .offcanvas ul li a.active {
 
   #hero .text-box {
     width: 70%;
+  }
+
+  #kuliner .kuliner-box {
+    padding: 40px 0px 100px;
+  }
+
+  #hero .text-box {
+    width: 90%;
   }
 
   #kuliner {
@@ -239,5 +232,15 @@ nav .offcanvas ul li a.active {
   #kuliner .img-kuliner {
     width: 100% !important;
     margin: 2rem 0 4rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  #kuliner .kuliner-desc p {
+    font-size: 1rem !important;
+  }
+
+  #kuliner .kuliner-desc .btn-selengkapnya {
+    font-size: .8rem !important;
   }
 }
